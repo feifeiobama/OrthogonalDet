@@ -1,0 +1,23 @@
+_BASE_: "base.yaml"
+MODEL:
+  WEIGHTS: "detectron2://ImageNetPretrained/torchvision/R-50.pkl"
+  RESNETS:
+    DEPTH: 50
+    STRIDE_IN_1X1: False
+  NUM_PROPOSALS: 500
+  NUM_CLASSES: 81
+DATASETS:
+  TRAIN: ("my_train",)
+  TEST:  ("my_val",)
+SOLVER:
+  STEPS: (60000, 65000, 67000)
+  MAX_ITER: 70000
+TEST:
+  EVAL_PERIOD: 70000
+  PREV_INTRODUCED_CLS: 19
+  CUR_INTRODUCED_CLS: 21
+  PREV_CLASSES: (19,)
+INPUT:
+  CROP:
+    ENABLED: True
+  FORMAT: "RGB"
