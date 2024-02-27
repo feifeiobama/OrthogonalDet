@@ -1,6 +1,10 @@
 # OrthogonalDet
 Code for CVPR 2024 paper "Exploring Orthogonality in Open World Object Detection".
 
+<p align="center">
+    <img src="assets/intro.png" alt="OrthogonalDet" width=60%>
+</p>
+
 ## Requirements
 - Linux or macOS with Python ≥ 3.8.
 - Install [PyTorch ≥ 1.9.0, torchvision](https://pytorch.org/#install),
@@ -32,7 +36,13 @@ Code for CVPR 2024 paper "Exploring Orthogonality in Open World Object Detection
 ## Results
 The following results were obtained with four NVIDIA 2080 Ti GPUs, using the checkpoints at [this link](https://drive.google.com/drive/folders/1XTTmjC_oVA2-J8l-bBdBo9nrQVq-lgKm).
 
-![owod](assets/owod.png)
+* Open world object detection on M-OWODB and S-OWODB:
+  
+  ![owod](assets/owod.png)
+  
+* Incremental object detection on PASCAL VOC:
+  
+  ![iod](assets/iod.png)
 
 ## Acknowledgement
 
