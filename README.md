@@ -1,5 +1,5 @@
 # OrthogonalDet
-Code for CVPR 2024 paper "Exploring Orthogonality in Open World Object Detection".
+Code for CVPR 2024 paper [Exploring Orthogonality in Open World Object Detection](https://openaccess.thecvf.com/content/CVPR2024/papers/Sun_Exploring_Orthogonality_in_Open_World_Object_Detection_CVPR_2024_paper.pdf).
 
 <p align="center">
     <img src="assets/intro.png" alt="OrthogonalDet" width=60%>
@@ -44,6 +44,19 @@ The following results were obtained with four NVIDIA 2080 Ti GPUs, using the che
 * Incremental object detection on PASCAL VOC:
   
   ![iod](assets/iod.png)
+
+## Citation
+
+If you find this code useful, please consider citing:
+```bibtex
+@inproceedings{sun2024exploring,
+  title={Exploring Orthogonality in Open World Object Detection},
+  author={Sun, Zhicheng and Li, Jinghan and Mu, Yadong},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={17302--17312},
+  year={2024},
+}
+```
 
 ## Acknowledgement
 
